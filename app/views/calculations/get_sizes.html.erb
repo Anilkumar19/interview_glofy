@@ -1,0 +1,11 @@
+<p>Enter the weight of each one</p>
+
+<%= form_tag(find_odd_values_path, :method => "post") do %>
+ <% @a.times do |g| %>
+   <% @count += 1 %>
+   <%= label_tag(:q, "#{@count} Number:") %>
+   <%= text_field_tag "q[]" %>
+   <br>
+ <% end %>
+<%= submit_tag("submit") %>
+<% end %>

@@ -1,16 +1,7 @@
-<p>Coding for find odd elemnt is there in calculations controller file </p>
+<p>Enter number of elements </p>
+<%= form_tag(get_sizes_path, :method => "post") do %>
+  <%= label_tag(:q, "Number:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("submit") %>
+<% end %>
 
-<%#= puts "Enter N number of elements" %>
-<%#= a = gets.to_i %>
-<%# count = 0 %>
-<%#= puts "Enter the weight of each one" %>
-<%# anil = [] %>
-	<%# a.times do |g| %>
-		<%# count += 1 %>
-		<%#= puts "enter the weight of #{count} element" %>
-		<%# f = gets.chomp.to_i%>
-		<%# anil << f %>
-	<%# end %>
-<%# var = anil.uniq %>
-<%#= puts "The values of array is #{anil.each_with_index.sort}" %>
-<%#= puts "number of steps to find odd element is 1" %>
